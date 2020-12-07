@@ -7,7 +7,7 @@ const outputDist = {
   path: path.resolve(__dirname, 'dist'),
   globalObject: 'typeof self !== \'undefined\' ? self : this',
   libraryTarget: 'umd',
-  library: 'js8path-data',
+  library: '@js8path/js8path-data',
   filename: 'overwrite-this.js'
 }
 const babelRule = {

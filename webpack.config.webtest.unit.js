@@ -26,7 +26,7 @@ module.exports = [
     output: {
       path: path.resolve(__dirname, 'test_bundles'),
       libraryTarget: 'umd',
-      library: 'js8path-data',
+      library: '@js8path/js8path-data',
       filename: 'js8path-data-webtest-unit.js'
     },
     devServer: {

@@ -1,5 +1,5 @@
 /*
-    utilities - js8path utility functions
+    utilities - js8path-data utility functions
     utilities.js
 */
 

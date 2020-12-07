@@ -1,11 +1,17 @@
-## js8path-data
+## @js8path/js8path-data
 
-# js8path-data Changelog
+# @js8path/js8path-data Changelog
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+
+## [1.0.1] - unreleased
+
+### Changed
+- update some package name references with @js8path scope
+- add release date for 1.0.0
 
 ## [1.0.0] - 2020-12-07
 

@@ -1,9 +1,9 @@
-# js8path-data
+# @js8path/js8path-data
 Shared structures, validators, and utilities for js8path data.
 
 ## Usage
 
-### js8path-data javascript module
+### @js8path/js8path-data javascript module
 
 Usage:
 
@@ -13,7 +13,7 @@ Usage:
 - js8pathData.exampleData.*: examples of js8path data
 
 ```javascript
-// import js8pathData from '@js8path/js8path-data'
+// import @js8path/js8pathData from '@js8path/js8path-data'
 ```
 
 ## Development
