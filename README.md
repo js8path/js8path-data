@@ -1,9 +1,9 @@
 # js8path-data
-Shared structures, validators,  and utilities for js8path data.
+Shared structures, validators, and utilities for js8path data.
 
 ## Usage
 
-### annotated-error javascript module
+### js8path-data javascript module
 
 Usage:
 

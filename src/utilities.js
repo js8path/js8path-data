@@ -8,7 +8,7 @@ import _find from 'lodash/find'
 import _join from 'lodash/join'
 import _map from 'lodash/map'
 import moment from 'moment'
-import AnnotatedError from 'annotated-error'
+import AnnotatedError from '@js8path/annotated-error'
 
 function timestampIsoToUnix (isoTimestamp) {
   // convert an ISO 8601 timestamp to a unix seconds value
