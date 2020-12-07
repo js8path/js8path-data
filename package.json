@@ -1,0 +1,65 @@
+{
+  "name": "js8path-data",
+  "version": "0.1.0",
+  "description": "PSK Reporter queries for JS8Path",
+  "main": "./dist/js8path-data.js",
+  "module": "./src/main.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev:unit": "./scripts/webtest_unit_continuous.cmd",
+    "dev:int": "./scripts/webtest_int_continuous.cmd",
+    "generate": "node ./scripts/generate-json.js",
+    "build": "./scripts/build_distribution",
+    "test": "nyc mocha ./test/unit/test-ALL.js",
+    "test:unit": "nyc mocha ./test/unit/test-ALL.js",
+    "test:int": "mocha ./test/int/inttest-ALL.js --require @babel/polyfill --require @babel/register"
+  },
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "annotated-error": "^0.1.0",
+    "lodash": "^4.17.10",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.6.1",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "@istanbuljs/nyc-config-babel": "^2.1.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-istanbul": "^5.1.4",
+    "chai": "^4.2.0",
+    "es6-promise": "^4.2.6",
+    "eslint": "^5.16.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
+    "yargs": "^14.0.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "istanbul"
+    ]
+  },
+  "nyc": {
+    "extends": "@istanbuljs/nyc-config-babel",
+    "require": [
+      "@babel/register"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  }
+}
